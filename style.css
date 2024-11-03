@@ -1,0 +1,116 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(197, 188, 188);
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* CSS HEADER */
+
+header{
+    padding: 40px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .logo img {
+    max-width: 50px;
+}
+
+header .menu nav ul{
+    list-style-type: none;
+}
+
+
+
+header .menu nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+    
+}
+
+header .menu nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+    display: inline-block;
+   
+}
+
+.menu nav a:hover{
+    transform: scale(1.05);
+}
+
+header .btn-contato button{
+    height: 30px;
+    width: 100px;
+    font-size: 19px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+header .btn-contato button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/* Home */
+
+section.home {
+    height: 100vh;
+    background-image: url(Images/blade-runner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.home .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.home .txt-home h1{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 200;
+}
+
+.home .txt-home h1 span{
+    font-weight: 800;
+    display: block;
+}
+
+
+.home .txt-home p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.home .txt-home p span{
+    display: block;
+}

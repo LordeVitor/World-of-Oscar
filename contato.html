@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: #81259d;
+            font-family: 'Courier New', Courier, monospace;
+            display: grid;
+            place-items: center;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            color: black;
+            margin-bottom: 5 rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 28rem;
+            background: #fff;
+            padding: 4rem;
+            border-radius: 20px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+        }
+
+        label {
+            width: 100%;
+            color: #777;
+            align-items: flex-start;
+            transition: 0.15 linear;
+        }
+
+        label:focus-within {
+            color: #8d3dc8;
+        }
+
+        input {
+            font-size: 20px;
+            color: #404040;
+            padding: 1rem 0 0.5rem 0;
+            width: 100%;
+            border: none;
+            border-color: #a0a0a0;
+            border-bottom-style: dotted;
+            border-bottom-width: 1px;
+            margin-bottom: 10px;
+            transition: 0.15s linear;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #8d3dc8;
+        }
+
+        button {
+            font-size: 20px;
+            line-height: 5px;
+            font-weight: 500;
+            text-transform: uppercase;
+            width: 100%;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            background: transparent;
+            color: #81259d;
+            border: 1px solid currentColor;
+            border-radius: 4px;
+            margin: 3px;
+            transition: 0.25s;
+        }
+
+        button:hover, button:focus {
+            outline: none;
+            background: #8d3dc8;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form action="resultado.php" method="POST">
+        <h3>Cadastre seu contato</h3>
+        <p>Email: <input type="email" name="email" id="idemail" required></p>
+        <p>Nome: <input type="text" name="name" id="idname" required></p>
+        <p>Sobrenome: <input type="text" name="sobrenome" id="idSobrenome" required></p>
+        <p>Gênero:</p>
+        <label><input type="radio" name="Gender" value="Masculino"> Masculino</label><br>
+        <label><input type="radio" name="Gender" value="Feminino"> Feminino</label><br>
+        <label><input type="radio" name="Gender" value="Outro"> Outro</label><br>
+        <button type="submit" name="enviar">Enviar</button>
+    </form>
+</body>
+</html>

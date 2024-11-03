@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Collections</title>
+
+<style>
+    *{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body{
+background-color: rgb(197, 188, 188);
+}
+
+.interface{
+max-width: 1280px;
+margin: 0 auto;
+}
+
+/* CSS HEADER */
+
+header{
+padding: 40px 0;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+header .interface{
+display: flex;
+justify-content: space-between;
+
+}
+
+header .logo img {
+max-width: 50px;
+}
+
+header .menu nav ul{
+list-style-type: none;
+}
+
+
+
+header .menu nav ul li{
+display: inline-block;
+margin: 0 40px;
+
+}
+
+header .menu nav ul li a{
+color: white;
+text-decoration: none;
+transition: .2s;
+display: inline-block;
+
+}
+
+.menu nav a:hover{
+transform: scale(1.05);
+}
+
+header .btn-contato button{
+height: 30px;
+width: 100px;
+font-size: 19px;
+background-color: transparent;
+border-radius: 20px;
+color: aliceblue;
+cursor: pointer;
+transition: .5s;
+
+}
+
+header .btn-contato button:hover{
+background-color: #fff;
+color: black;
+}
+
+header.rolar{
+background-color:#f3a11d; 
+padding: 5px 5px;
+
+}
+
+header.rolar .menu nav ul li a{
+color: black;
+margin-top: 17px;
+}
+
+header.rolar .btn-contato button{
+border-radius: 20px #000;
+color: #000;
+margin-top: 15px;
+}
+
+header.rolar .btn-contato button:hover{
+background-color: #000;
+color: #fff;
+}
+
+/* Home */
+
+section.home {
+    height: 100vh;
+    background-image: url(Images/dunkirk.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.home .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.home .txt-home h1{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 200;
+}
+
+.home .txt-home h1 span{
+    font-weight: 800;
+    display: block;
+}
+
+
+.home .txt-home p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.home .txt-home p span{
+    display: block;
+}
+
+/* VIDEOS */
+
+.Videos{
+    width:420px ;
+    height: 235px;
+}
+
+.Videos1{
+    width:420px ;
+    height: 235px;
+    flex: 1; /* O vídeo ocupará 50% da largura */
+    margin-right: 20px; /* Espaço entre o vídeo e o texto */
+}
+
+.title-collections{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.p-collections{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.Social-media{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+</style>
+
+</head>
+<body>
+    <header id="header">
+        <div class="interface">
+            <section class="logo">
+                <img src="oscar.svg">
+            </section>
+
+
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Oscar Winners</a></li>
+                        <li><a href="Collections.html">Collections</a></li>
+                        <li><a href="Cinema-history.html">Cinema History</a></li>
+                        <li><a href="Best-Films.html">Best Films</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+
+            <section class="btn-contato">
+                <a href="contato.html">
+                    <button>contato</button>
+                </a>
+            </section>
+
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="interface">
+            <div class="txt-home">
+                <h1>BEST OF OSCAR 
+                    <span> COLLECTIONS</span></h1>
+
+                    <p>Aqui você verá um pouco das maiores 
+                        <span>Obras de arte da Humanidade, o melhor da 7° Arte</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="winners" class="winners">
+        <div class="interface">
+            <article class="item-conteiner">
+                <div class="txt-item">
+
+                    <h1 class="title-collections"> COLLECTIONS</h1>
+                    <p class="p-collections">Prepare-se para mergulhar no universo das maiores obras-primas do cinema. 
+                        Nesta coleção especial, reunimos filmes que marcaram gerações, redefiniram 
+                        gêneros e eternizaram personagens. Aqui, cada título é uma viagem 
+                        inesquecível, carregada de emoções, reviravoltas e atuações que fizeram 
+                        história. Descubra os filmes que moldaram a sétima arte e deixaram sua marca 
+                        no coração dos espectadores.</p>
+
+            <article class="item-conteiner">
+                <div class="txt-item">
+
+                    <h3><span> STAR WARS</span><br>
+                        Episode 3</h3>
+                    <p> Anakin Skywalker, manipulado pelo Chanceler Palpatine, se 
+                        volta contra os Jedi e sucumbe ao lado sombrio, tornando-se 
+                        Darth Vader. Enquanto isso, a República cai e o Império 
+                        Galáctico emerge, levando a um confronto devastador entre 
+                        Anakin e seu mestre Obi-Wan Kenobi.
+                    </p>
+                </div>
+
+                <div class="videos">
+                    <video width="340" height="260" controls>
+                        <source src="videos/videoplayback (2).mp4" type="video/mp4">
+                    </video>
+                </div>
+               
+            </article>
+
+            <article class="item-conteiner">
+                <div class="img-itens">
+                    <video  width="320" height="235" controls>
+                        <source src="videos/videoplayback (1).mp4" type="video/mp4">
+                </div>
+                <div class="txt-item">
+                    <h3><span>LORD OF </span><br>
+                        RINGS</h3>
+                    <p>O hobbit Frodo Bolseiro recebe um anel poderoso que deve ser destruído para 
+                        impedir o retorno do maligno Sauron. Ele e seus companheiros embarcam em uma 
+                        perigosa jornada até a Montanha da Perdição, enfrentando forças sombrias pelo 
+                        caminho.
+                    </p>
+                </div>
+            </article>
+
+            <article class="item-conteiner">
+                <div class="txt-item">
+
+                    <h3><span>BATMAN</span><br>
+                        The Dark Knight</h3>
+                    <p>O Coringa surge em Gotham, espalhando caos e forçando Batman a enfrentar seus
+                    limites morais. Enquanto o herói tenta salvar a cidade, ele lida com as 
+                    consequências de suas escolhas e a ascensão de Harvey Dent como o Duas-Caras.
+                    </p>
+                </div>
+
+                <div class="videos">
+                    <video width="340" height="260" controls>
+                        <source src="videos/videoplayback.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+        </div>
+    </section>
+
+        <marquee class="Social-media">
+            @l.o.r.d.e.v.i.t.o.r@l.o.r.d.e.v.i.t.o.r@l.o.r.d.e.v.i.t.o.r
+        </marquee>
+
+</body>
+</html>
